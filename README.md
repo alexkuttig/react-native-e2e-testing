@@ -33,8 +33,6 @@ To use the CLI:
 
 This will start a basic Appium server. You can see more about the CLI here http://appium.io/docs/en/writing-running-appium/server-args/
 
-To use the Desktop App, go to http://appium.io/ _Note: you will need to download version 1.9.1 of the app_
-
 You will also want to install appium-doctor to ensure your environment is setup to use Appium correctly:
 
 `npm install -g appium-doctor`
