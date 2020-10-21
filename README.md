@@ -5,7 +5,7 @@ React Native applications. We can take advantage of [Appium](http://appium.io/)
 and [WebdriverIO](https://webdriver.io/) to run our tests against our application 
 on emulator/simulators and physical devices.
 
-It als includes a short description how to use this kind of testing as part of your CI/CD pipeline.
+It also includes a short description how to use this kind of testing as part of your CI/CD pipeline.
 
 ## Getting Started
 
