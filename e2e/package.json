@@ -4,7 +4,7 @@
   "private": true,
   "description": "Integration tests and runner",
   "scripts": {
-    "package": "npm install && npx npm-bundle && zip -r e2e-tests.zip *.tgz && rm *.tgz",
+    "package": "npm install && npx npm-bundle && zip -r ../e2e-tests.zip *.tgz && rm *.tgz",
     "test:android:local": "npx wdio ./wdio.android.local.conf.js",
     "test:android": "npx wdio ./wdio.android.conf.js",
     "test:ios:local": "npx wdio ./wdio.ios.local.conf.js",
