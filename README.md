@@ -15,7 +15,7 @@ Once you are able to run the application your React Native CLI, you are now read
 
 This repository uses the following versions:
 
-- Appium 1.14.2
+- Appium 1.18.3
 
 - React Native 63.3
 
@@ -29,7 +29,7 @@ To test locally you will need the Appium server running. You can either use the 
 
 To use the CLI:
 
-`npm install -g appium@1.14.2 && appium`
+`npm install -g appium@1.18.3 && appium`
 
 This will start a basic Appium server. You can see more about the CLI here http://appium.io/docs/en/writing-running-appium/server-args/
 

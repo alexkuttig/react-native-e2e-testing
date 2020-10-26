@@ -9,14 +9,14 @@ phases:
       # By default, this testspec file uses Appium server version 1.9.1 which is a prerequisite for iOS 12
       # To use a different appium version, change 'APPIUM_VERSION' below to your desired version.
       # For convenience, we have preinstalled the following versions - 1.6.5, 1.7.1, 1.7.2, 1.8.0, 1.8.1, 1.9.1
-      - export APPIUM_VERSION=1.9.1
+      - export APPIUM_VERSION=1.18.3
       - avm $APPIUM_VERSION
       - ln -s /usr/local/avm/versions/$APPIUM_VERSION/node_modules/.bin/appium  /usr/local/avm/versions/$APPIUM_VERSION/node_modules/appium/bin/appium.js
-      
+
       # By default the node version installed is 11.4.0
       # you can switch to an alternate node version using below command.
       # - nvm install 10.13.0
-      
+
       # Unpackage and install the node modules that you uploaded in the test phase.
       - echo "Navigate to test package directory"
       - cd $DEVICEFARM_TEST_PACKAGE_PATH
@@ -57,7 +57,7 @@ phases:
                 sleep 1;
                 start_appium_timeout=$((start_appium_timeout+1));
             fi;
-        done; 
+        done;
 
   # The test phase includes commands that run your test suite execution.
   test:
@@ -66,7 +66,7 @@ phases:
       - echo "Navigate to test source code"
       # Change the directory to node_modules folder as it has your test code and the dependency node modules.
       - cd $DEVICEFARM_TEST_PACKAGE_PATH/node_modules/*
-      
+
       - echo "Start Appium Node test"
       # Enter the command below to start the tests . The comamnd should be similar to what you use to run the tests locally.
       # For e.g. assuming you run your tests locally using command "node YOUR_TEST_FILENAME.js.", enter the same command below:
